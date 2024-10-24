@@ -1,5 +1,13 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
+import { useCustomerStore } from "./stores/customer";
+import { onMounted } from "vue";
+
+const customerStore = useCustomerStore();
+
+onMounted(() => {
+  customerStore.fetchCustomerToken();
+});
 </script>
 
 <template>
@@ -12,6 +20,7 @@ import { RouterLink, RouterView } from "vue-router";
   <header>
     <nav>
       <RouterLink to="/">Home</RouterLink>
+      <RouterLink to="/strategy">Strategy</RouterLink>
       <RouterLink to="/debriefs">Debrief</RouterLink>
     </nav>
   </header>

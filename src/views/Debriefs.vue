@@ -90,6 +90,24 @@ const projectFeedback = ref([
       },
     ],
   },
+  {
+    title: "Project 12",
+    questions: [
+      {
+        question: "Which teammates executed the project?",
+        answer: "Team members: Olasunkanmi, and Samuel",
+      },
+      {
+        question: "What made you smile?",
+        answer: "",
+      },
+      {
+        question: "What did you find confusing? Did you encounter any issues?",
+        answer:
+          "<ul><li style='margin-bottom:10px;'>Values from 1000 displays NaN in the amount input field. Seems there's a bug in instruments for that length of value</li> <li style='margin-bottom:10px;'>We went over the time by 30 mins.</li></ul>",
+      },
+    ],
+  },
 ]);
 const activeProject = ref(null);
 const showResponse = (project) => {

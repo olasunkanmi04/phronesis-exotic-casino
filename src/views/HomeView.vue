@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted, watch, ref } from "vue";
+import { watch, ref, onUnmounted } from "vue";
 import { useCustomerStore } from "../stores/customer";
 import RebillyInstruments from "@rebilly/instruments";
 
@@ -41,10 +41,6 @@ watch(customerStore, () => {
   }
 });
 
-onMounted(() => {
-  customerStore.fetchCustomerToken();
-});
-
 watch(depositRequest, () => {
   if (depositRequest.value) {
     // Mount Rebilly Instruments
@@ -54,6 +50,15 @@ watch(depositRequest, () => {
         depositRequestId: depositRequest.value.id,
       },
       jwt: customerStore.customerToken,
+      theme: {
+        colorPrimary: "#d36135", // Brand color
+        colorText: "#fff",
+        colorDanger: "#cd5c5c",
+        colorBackground: "#283845", // Website background color
+        buttonColorText: "#fff",
+        labels: "floating",
+        fontSizeBase: "13px",
+      },
     });
     // Optional
     RebillyInstruments.on("instrument-ready", (instrument) => {
@@ -63,6 +68,10 @@ watch(depositRequest, () => {
       console.info("purchase-completed", purchase);
     });
   }
+});
+
+onUnmounted(() => {
+  RebillyInstruments.destroy();
 });
 </script>
 
