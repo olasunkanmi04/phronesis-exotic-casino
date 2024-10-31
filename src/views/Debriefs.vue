@@ -33,6 +33,7 @@ import debriefImage9 from "@/assets/debriefs/13-09.png";
 import debriefImage10 from "@/assets/debriefs/13-10.png";
 import debriefImage11 from "@/assets/debriefs/13-11.png";
 import debriefImage12 from "@/assets/debriefs/13-12.png";
+import debriefImage13 from "@/assets/debriefs/13-13.png";
 import { ref } from "vue";
 const projectFeedback = ref([
   {
@@ -150,6 +151,8 @@ const projectFeedback = ref([
           `Search on the documentation has wierd sort order, not really relevand and the "Documentation" and "API reference" tags are not enough as we'd like to filter blog posts out as well.<br><img src="${debriefImage9}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
           `Search displays a strange &lt;mark&gt; tag in the results.<br><img src="${debriefImage10}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
           `Search cuts spaces between words due to original text being split into separate HTML text nodes without trailing spaces (which eventually get concatenated as is).<br><img src="${debriefImage11}" alt='debrief image' style='width: 100%; margin-top: 10px;' /><img src="${debriefImage12}" alt='debrief image' style='width: 100%;' />`,
+          `Instruments don't respect latest Ready to Pay response and draws methods available on mount, so the amount change would not be respected as well.<br><img src="${debriefImage13}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
+          `Rules engine filters for Ready to Pay (and Payout) requested event doesn't allow filtering by root properties like "currency" or "amount". This prevents us from using RTP through Recomm at all. We were forced to adjust filters via the API. We also added a <a href="https://github.com/Rebilly/rebilly/pull/8318" target="_blank">PR</a> to fix this.`,
         ],
       },
     ],
