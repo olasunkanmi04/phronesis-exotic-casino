@@ -44,6 +44,9 @@ import debriefImage13 from "@/assets/debriefs/13-13.png";
 import debriefImage14 from "@/assets/debriefs/14-1.png";
 import debriefImage15 from "@/assets/debriefs/14-2.png";
 import debriefImage16 from "@/assets/debriefs/14-3.png";
+import debriefImage17 from "@/assets/debriefs/15-1.png";
+import debriefImage18 from "@/assets/debriefs/15-2.png";
+import debriefImage19 from "@/assets/debriefs/15-3.mov";
 import { ref } from "vue";
 const projectFeedback = ref([
   {
@@ -189,6 +192,32 @@ const projectFeedback = ref([
           `Should be 'Use this process to activate...'.<br><img src="${debriefImage14}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
           `We were initially confused when a currency that isn't related to my location was shown but realised it's the payment card's curreny.<br><img src="${debriefImage16}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
           `Currency conversion seem to work with only payment card, doesn't work with other payment methods such as bank transfer and interac.`,
+        ],
+      },
+    ],
+  },
+  {
+    title: "Project 15",
+    questions: [
+      {
+        question: "Which teammates executed the project?",
+        answer: "Team members: Olasunkanmi, and Bartlomiej",
+      },
+      {
+        question: "What made you smile?",
+        answer: "Documentation seem pretty straightforward.",
+      },
+      {
+        question: "What did you find confusing? Did you encounter any issues?",
+        answer: [
+          `We're not sure if Rebilly has control over this but the text color is hard to read because it's dark color on a dark background. <br><img src="${debriefImage17}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
+          "We were confused as to how the system determines which gateway account to use. We created a separate gateway account for CAD that has 3DS enabled but the system used the previous gateway where we enabled DCC, so we had to remove CAD from the DCC enabled gateway for it to point to 3DS enabled gateway.",
+          "Related to number 2 above, we enabled CAD for the DCC and one of our visa card uses the 3DS enabled gateway and the other uses the DCC enabled gateway, we are not sure how it determines which gateway to use.",
+          `Choose another payment method button takes us out of our site. <br><img src="${debriefImage18}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
+          `We noticed when testing, if you select a card, enter your cvv but change your mind and select another card and enter cvv for that card, it throws an error about billing address but when you start over and go straight to select the card throwing the error, it works fine.<br><video width="100%" controls>
+  <source src="${debriefImage19}" type="video/mp4">
+  Your browser does not support HTML video.
+</video>`,
         ],
       },
     ],
