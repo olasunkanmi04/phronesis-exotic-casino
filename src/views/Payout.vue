@@ -79,11 +79,15 @@ watch(payoutRequest, () => {
 
       <input type="number" v-model="amount" />
 
-      <button class="styled-button" @click="requestPayout" type="button">
-        Request payout
+      <button
+        class="styled-button"
+        @click="requestPayout"
+        type="button"
+        :disabled="isLoading"
+      >
+        {{ isLoading ? "Loading..." : "Request payout" }}
       </button>
     </form>
-    <div v-if="isLoading" style="margin-top: 40px">Loading...</div>
     <div class="rebilly-instruments-summary"></div>
     <div class="rebilly-instruments"></div>
   </div>
