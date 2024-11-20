@@ -21,6 +21,7 @@ onMounted(() => {
     <nav>
       <RouterLink to="/">Home</RouterLink>
       <RouterLink to="/strategy">Strategy</RouterLink>
+      <RouterLink to="/payout">Payout</RouterLink>
       <RouterLink to="/debriefs">Debrief</RouterLink>
     </nav>
   </header>
@@ -48,7 +49,7 @@ body {
 }
 
 .styled-button {
-  background-color: #009b7d; /* Teal */
+  background-color: #d36135; /* Teal */
   color: #ffffff; /* White text */
   border: none;
   border-radius: 25px; /* Rounded corners */
@@ -60,11 +61,12 @@ body {
     background-color 0.3s ease,
     transform 0.3s ease; /* Transition for hover effects */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  display: block;
 }
 
 .styled-button:hover {
-  background-color: #588157; /* Soft Yellow on hover */
-  color: #009b7d; /* Change text color on hover */
+  background-color: #a6cfd5; /* Soft Yellow on hover */
+  color: #fff; /* Change text color on hover */
   transform: translateY(-2px); /* Slight lift effect on hover */
 }
 
