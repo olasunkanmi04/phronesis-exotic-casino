@@ -53,6 +53,9 @@ import debriefImage22 from "@/assets/debriefs/16-3.png";
 import debriefImage23 from "@/assets/debriefs/16-4.png";
 import debriefImage24 from "@/assets/debriefs/17-1.png";
 import debriefImage25 from "@/assets/debriefs/17-2.png";
+import debriefImage26 from "@/assets/debriefs/17-3.png";
+import debriefImage27 from "@/assets/debriefs/17-4.png";
+import debriefImage28 from "@/assets/debriefs/17-5.png";
 import { ref } from "vue";
 const projectFeedback = ref([
   {
@@ -265,6 +268,9 @@ const projectFeedback = ref([
         answer: [
           `We have eCheck, ACH and Skrill set up but only Skrill and Bank account show. <br><img src="${debriefImage24}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
           `Ready to payout api returns eCheck but instrument doesn't display it for either USA or Canada. <br><img src="${debriefImage25}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
+          `In recomm the payout request page should prepoluated the amount on the request instrument since we already know that. <br><img src="${debriefImage26}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
+          `Try to fulfil $5 out of $10 requested. Got an error and transaction was declined yet I payout request status changed to partially fulfil and total payout allocation remaining is now $5. <br><img src="${debriefImage27}" alt='debrief image' style='width: 100%; margin-top: 10px;' /> <br><img src="${debriefImage28}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
+          `Will be nice to see the transaction/timeline in the payout request page.`,
         ],
       },
     ],
