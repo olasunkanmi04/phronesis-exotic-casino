@@ -12,7 +12,7 @@ const createPayoutRequest = async () => {
   const requestPayoutData = {
     websiteId: import.meta.env.VITE_WEBSITE_ID,
     customerId: import.meta.env.VITE_CUSTOMER_ID,
-    currency: "USD",
+    currency: "CAD",
     amount: amount.value,
   };
   console.log("requestPayoutData", requestPayoutData);

@@ -51,6 +51,7 @@ import debriefImage20 from "@/assets/debriefs/16-1.png";
 import debriefImage21 from "@/assets/debriefs/16-2.png";
 import debriefImage22 from "@/assets/debriefs/16-3.png";
 import debriefImage23 from "@/assets/debriefs/16-4.png";
+import debriefImage24 from "@/assets/debriefs/17-1.png";
 import { ref } from "vue";
 const projectFeedback = ref([
   {
@@ -243,6 +244,25 @@ const projectFeedback = ref([
           `Typographical error when testing on the website "anogther instead of another". We realised later on that this might have been the organization name. <br><img src="${debriefImage20}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
           `We had two errors on two attempt to make a payout request. One of the error was about permission and when you check the network, the error when this endpoint <em>/storefront/organizations/phronesis-exotic-escapes/payout-requests/{request_id}</em> is called had to do with ACL permissions, we updated the permissions and got the error in the image below but when we checked recomm we found both payout request attempt and we were able to fully fulfil one and partially fully the other. <br><img src="${debriefImage21}" alt='debrief image' style='width: 100%; margin-top: 10px;' /><br><img src="${debriefImage22}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
           `After getting a success message that allocation was successful, we immiedately got this error  <em>The total allocated amount must be less than or equal to the available amount.</em>. Also, there were two toast success notifications.". <br><img src="${debriefImage23}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
+        ],
+      },
+    ],
+  },
+  {
+    title: "Project 17",
+    questions: [
+      {
+        question: "Which teammates executed the project?",
+        answer: "Team members: Olasunkanmi, and Dara",
+      },
+      {
+        question: "What made you smile?",
+        answer: "Documentation seem pretty straightforward.",
+      },
+      {
+        question: "What did you find confusing? Did you encounter any issues?",
+        answer: [
+          `We have eCheck, ACH and Skrill set up but only Skrill and Bank account show. <br><img src="${debriefImage24}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
         ],
       },
     ],
