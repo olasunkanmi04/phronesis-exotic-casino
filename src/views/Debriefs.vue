@@ -52,6 +52,7 @@ import debriefImage21 from "@/assets/debriefs/16-2.png";
 import debriefImage22 from "@/assets/debriefs/16-3.png";
 import debriefImage23 from "@/assets/debriefs/16-4.png";
 import debriefImage24 from "@/assets/debriefs/17-1.png";
+import debriefImage25 from "@/assets/debriefs/17-2.png";
 import { ref } from "vue";
 const projectFeedback = ref([
   {
@@ -263,6 +264,7 @@ const projectFeedback = ref([
         question: "What did you find confusing? Did you encounter any issues?",
         answer: [
           `We have eCheck, ACH and Skrill set up but only Skrill and Bank account show. <br><img src="${debriefImage24}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
+          `Ready to payout api returns eCheck but instrument doesn't display it for either USA or Canada. <br><img src="${debriefImage25}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
         ],
       },
     ],
