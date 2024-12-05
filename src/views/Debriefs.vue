@@ -56,6 +56,7 @@ import debriefImage25 from "@/assets/debriefs/17-2.png";
 import debriefImage26 from "@/assets/debriefs/17-3.png";
 import debriefImage27 from "@/assets/debriefs/17-4.png";
 import debriefImage28 from "@/assets/debriefs/17-5.png";
+import debriefImage29 from "@/assets/debriefs/18-1.png";
 import { ref } from "vue";
 const projectFeedback = ref([
   {
@@ -271,6 +272,27 @@ const projectFeedback = ref([
           `In recomm the payout request page should prepoluated the amount on the request instrument since we already know that. <br><img src="${debriefImage26}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
           `Try to fulfil $5 out of $10 requested. Got an error and transaction was declined yet I payout request status changed to partially fulfil and total payout allocation remaining is now $5. <br><img src="${debriefImage27}" alt='debrief image' style='width: 100%; margin-top: 10px;' /> <br><img src="${debriefImage28}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
           `Will be nice to see the transaction/timeline in the payout request page.`,
+        ],
+      },
+    ],
+  },
+  {
+    title: "Project 18",
+    questions: [
+      {
+        question: "Which teammates executed the project?",
+        answer: "Team members: Olasunkanmi, and Bartlomiej",
+      },
+      {
+        question: "What made you smile?",
+        answer: "",
+      },
+      {
+        question: "What did you find confusing? Did you encounter any issues?",
+        answer: [
+          `We couldn't find documentation on how to configure apple pay or google pay outside of framepay.`,
+          `When we tried paying with apple pay it says Amount Pending. <br><img src="${debriefImage29}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
+          `Is there a way the digital wallets know it's a test transaction? We thought because it's a testprocessor gateway it will know it's a test transaction.`,
         ],
       },
     ],
