@@ -57,6 +57,8 @@ import debriefImage26 from "@/assets/debriefs/17-3.png";
 import debriefImage27 from "@/assets/debriefs/17-4.png";
 import debriefImage28 from "@/assets/debriefs/17-5.png";
 import debriefImage29 from "@/assets/debriefs/18-1.png";
+import debriefImage30 from "@/assets/debriefs/19-1.png";
+import debriefImage31 from "@/assets/debriefs/19-2.png";
 import { ref } from "vue";
 const projectFeedback = ref([
   {
@@ -293,6 +295,26 @@ const projectFeedback = ref([
           `We couldn't find documentation on how to configure apple pay or google pay outside of framepay.`,
           `When we tried paying with apple pay it says Amount Pending. <br><img src="${debriefImage29}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
           `Is there a way the digital wallets know it's a test transaction? We thought because it's a testprocessor gateway it will know it's a test transaction.`,
+        ],
+      },
+    ],
+  },
+  {
+    title: "Project 19",
+    questions: [
+      {
+        question: "Which teammates executed the project?",
+        answer: "Team members: Olasunkanmi, and Bartlomiej",
+      },
+      {
+        question: "What made you smile?",
+        answer: "",
+      },
+      {
+        question: "What did you find confusing? Did you encounter any issues?",
+        answer: [
+          `We weren't sure what to search for in the docs. We eventually figured it out without the docs.`,
+          `We expect when two rules and conditions are met, both should take action but Skrill payment only displays when currency is USD and customer LTV is $10,000+. <br><img src="${debriefImage30}" alt='debrief image' style='width: 100%; margin-top: 10px;' /><br><img src="${debriefImage31}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
         ],
       },
     ],
