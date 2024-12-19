@@ -20,6 +20,7 @@ onMounted(() => {
   <header>
     <nav>
       <RouterLink to="/">Home</RouterLink>
+      <RouterLink to="/deposit">Deposit</RouterLink>
       <RouterLink to="/strategy">Strategy</RouterLink>
       <RouterLink to="/payout">Payout</RouterLink>
       <RouterLink to="/debriefs">Debrief</RouterLink>

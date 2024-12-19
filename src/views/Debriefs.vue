@@ -28,22 +28,22 @@
 </template>
 
 <script setup>
-import debriefImage1 from "@/assets/debriefs/13-01.png";
-import debriefImage2 from "@/assets/debriefs/13-02.png";
-import debriefImage3 from "@/assets/debriefs/13-03.png";
-import debriefImage4 from "@/assets/debriefs/13-04.png";
-import debriefImage5 from "@/assets/debriefs/13-05.png";
-import debriefImage6 from "@/assets/debriefs/13-06.png";
-import debriefImage7 from "@/assets/debriefs/13-07.png";
-import debriefImage8 from "@/assets/debriefs/13-08.png";
-import debriefImage9 from "@/assets/debriefs/13-09.png";
-import debriefImage10 from "@/assets/debriefs/13-10.png";
-import debriefImage11 from "@/assets/debriefs/13-11.png";
-import debriefImage12 from "@/assets/debriefs/13-12.png";
-import debriefImage13 from "@/assets/debriefs/13-13.png";
-import debriefImage14 from "@/assets/debriefs/14-1.png";
-import debriefImage15 from "@/assets/debriefs/14-2.png";
-import debriefImage16 from "@/assets/debriefs/14-3.png";
+// import debriefImage1 from "@/assets/debriefs/13-01.png";
+// import debriefImage2 from "@/assets/debriefs/13-02.png";
+// import debriefImage3 from "@/assets/debriefs/13-03.png";
+// import debriefImage4 from "@/assets/debriefs/13-04.png";
+// import debriefImage5 from "@/assets/debriefs/13-05.png";
+// import debriefImage6 from "@/assets/debriefs/13-06.png";
+// import debriefImage7 from "@/assets/debriefs/13-07.png";
+// import debriefImage8 from "@/assets/debriefs/13-08.png";
+// import debriefImage9 from "@/assets/debriefs/13-09.png";
+// import debriefImage10 from "@/assets/debriefs/13-10.png";
+// import debriefImage11 from "@/assets/debriefs/13-11.png";
+// import debriefImage12 from "@/assets/debriefs/13-12.png";
+// import debriefImage13 from "@/assets/debriefs/13-13.png";
+// import debriefImage14 from "@/assets/debriefs/14-1.png";
+// import debriefImage15 from "@/assets/debriefs/14-2.png";
+// import debriefImage16 from "@/assets/debriefs/14-3.png";
 import debriefImage17 from "@/assets/debriefs/15-1.png";
 import debriefImage18 from "@/assets/debriefs/15-2.png";
 import debriefImage19 from "@/assets/debriefs/15-3.mov";
@@ -59,6 +59,12 @@ import debriefImage28 from "@/assets/debriefs/17-5.png";
 import debriefImage29 from "@/assets/debriefs/18-1.png";
 import debriefImage30 from "@/assets/debriefs/19-1.png";
 import debriefImage31 from "@/assets/debriefs/19-2.png";
+import debriefImage32 from "@/assets/debriefs/20-1.png";
+import debriefImage33 from "@/assets/debriefs/20-2.png";
+import debriefImage34 from "@/assets/debriefs/20-3.png";
+import debriefImage35 from "@/assets/debriefs/20-4.png";
+import debriefImage36 from "@/assets/debriefs/20-5.png";
+import debriefImage37 from "@/assets/debriefs/20-6.png";
 import { ref } from "vue";
 const projectFeedback = ref([
   // {
@@ -316,6 +322,30 @@ const projectFeedback = ref([
           `We weren't sure what to search for in the docs. We eventually figured it out without the docs.`,
           `We expect when two rules and conditions are met, both should take action but Skrill payment only displays when currency is USD and customer LTV is $10,000+. <br><img src="${debriefImage30}" alt='debrief image' style='width: 100%; margin-top: 10px;' /><br><img src="${debriefImage31}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
           "We noticed we couldn't edit a segment that was created.",
+        ],
+      },
+    ],
+  },
+  {
+    title: "Project 20",
+    questions: [
+      {
+        question: "Which teammates executed the project?",
+        answer: "Team members: Olasunkanmi, and Bartlomiej",
+      },
+      {
+        question: "What made you smile?",
+        answer: "",
+      },
+      {
+        question: "What did you find confusing? Did you encounter any issues?",
+        answer: [
+          `We kept getting this error intermittently and saved payment methods duplicate multiple times, but when we refresh it returns to normal. It happens when we switch page and back. <br><img src="${debriefImage32}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
+          `There's disparity in the examples in the doc. One example says the mount options are, <em>cashierToken</em> and <em>element</em> while another says it's <em>token</em> and <em>mountElement</em>. <br><img src="${debriefImage33}" alt='debrief image' style='width: 100%; margin-top: 10px;' /><br><img src="${debriefImage34}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
+          "There is no variable for --r-payment-method-item-border-color-hover and it was in the documentation.",
+          `Google pay button has a scroll bar. <br><img src="${debriefImage35}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
+          `The --r-surface variable doesn't exist in the documentation, instead we have --r-alert-background. Both works because --r-alert-background is referencing --r-surface but for consistence, we shouldn't show --r-surface in the docs. <br><img src="${debriefImage36}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
+          `Google map API not working and we couldn't enter the address manually. <br><img src="${debriefImage37}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
         ],
       },
     ],

@@ -1,0 +1,26 @@
+:root {
+    --r-background: transparent;
+    --r-secondary: transparent;
+    --r-primary: #d36135;
+    --r-button-text-color-hover: #dfdfdf;
+    --r-input-background: transparent;
+    --r-input-border-color: #c5c5c547;
+    --r-input-border-color-focus: #d36135;
+    --r-input-background-hover: transparent;
+    --r-input-border-color-hover:#d36135;
+    --r-input-text-color-focus: #fff;
+    --r-input-text-color-hover: #fff;
+    --r-input-background-focus: transparent;
+    --r-input-label-color: #fff;
+    --r-text: #fff;
+    --r-payment-method-item-background: transparent;
+    --r-payment-method-item-background-hover: transparent;
+    --r-payment-method-item-border-color: #AFE1AF;
+    --r-payment-method-item-border-color-hover: #AFE1AF;
+    --r-border-radius: none;
+    --r-font-family: 'Inter', sans-serif;
+    --r-payment-method-logo-border-radius: 0;
+    --r-icon-color: #c5c5c5d7;
+    --r-alert-background: transparent;
+    --r-input-placeholder-text-color: #c5c5c5;
+  }
