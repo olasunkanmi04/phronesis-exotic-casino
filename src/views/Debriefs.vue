@@ -377,6 +377,7 @@ const projectFeedback = ref([
           `UI alignment looks off. <br><img src="${debriefImage39}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
           `We get this error when we hit browser back button and tried the transaction again. <br><img src="${debriefImage40}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
           `After 6 declined transactions, we still have 0 declined payment intrument velocity. <br><img src="${debriefImage41}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
+          `We couldn't test the first task Permanently block payment cards when the number of consecutive declined transactions exceeds 5.`,
         ],
       },
     ],
