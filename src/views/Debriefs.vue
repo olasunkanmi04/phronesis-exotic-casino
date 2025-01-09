@@ -65,6 +65,10 @@ import debriefImage34 from "@/assets/debriefs/20-3.png";
 import debriefImage35 from "@/assets/debriefs/20-4.png";
 import debriefImage36 from "@/assets/debriefs/20-5.png";
 import debriefImage37 from "@/assets/debriefs/20-6.png";
+import debriefImage38 from "@/assets/debriefs/21-1.png";
+import debriefImage39 from "@/assets/debriefs/21-2.png";
+import debriefImage40 from "@/assets/debriefs/21-3.png";
+import debriefImage41 from "@/assets/debriefs/21-4.png";
 import { ref } from "vue";
 const projectFeedback = ref([
   // {
@@ -346,6 +350,33 @@ const projectFeedback = ref([
           `Google pay button has a scroll bar. <br><img src="${debriefImage35}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
           `The --r-surface variable doesn't exist in the documentation, instead we have --r-alert-background. Both works because --r-alert-background is referencing --r-surface but for consistence, we shouldn't show --r-surface in the docs. <br><img src="${debriefImage36}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
           `Google map API not working and we couldn't enter the address manually. <br><img src="${debriefImage37}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
+        ],
+      },
+    ],
+  },
+  {
+    title: "Project 21",
+    questions: [
+      {
+        question: "Which teammates executed the project?",
+        answer: "Team members: Olasunkanmi, and Radoslaw",
+      },
+      {
+        question: "What made you smile?",
+        answer: "",
+      },
+      {
+        question: "What did you find confusing? Did you encounter any issues?",
+        answer: [
+          `No idea what to look at in the documentation. Was stock on Risk score documentation but couldn't get it to work work.`,
+          `There should be a way to know here that 0 means permanently block. <br><img src="${debriefImage38}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
+          `We were not sure how to enter number of consecutive decline transactions.`,
+          `We couldn't save automated blocklist when there is a custom blocklist that isn't use. We should be able to delete the custom blocklist and save the automated blocklist.`,
+          `When there is an error, there is no way to know if a user is at the bottom of the page.``We think there should be a separate UI for each blocklist instead of having them all in one page.`,
+          `We think for block transactions with mismatched bank country and billing country, the first transaction should be blocked instead of letting it go through and then block subsequent transactions with the card. Maybe there should a switch if we want to block the first or just subsequent transactions.`,
+          `UI alignment looks off. <br><img src="${debriefImage39}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
+          `We get this error when we hit browser back button and tried the transaction again. <br><img src="${debriefImage40}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
+          `After 6 declined transactions, we still have 0 declined payment intrument velocity. <br><img src="${debriefImage41}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
         ],
       },
     ],
