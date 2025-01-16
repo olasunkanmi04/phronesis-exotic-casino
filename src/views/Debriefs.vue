@@ -69,6 +69,7 @@ import debriefImage38 from "@/assets/debriefs/21-1.png";
 import debriefImage39 from "@/assets/debriefs/21-2.png";
 import debriefImage40 from "@/assets/debriefs/21-3.png";
 import debriefImage41 from "@/assets/debriefs/21-4.png";
+import debriefImage42 from "@/assets/debriefs/22-1.png";
 import { ref } from "vue";
 const projectFeedback = ref([
   // {
@@ -379,6 +380,33 @@ const projectFeedback = ref([
           `We get this error when we hit browser back button and tried the transaction again. <br><img src="${debriefImage40}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
           `After 6 declined transactions, we still have 0 declined payment intrument velocity. <br><img src="${debriefImage41}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
           `We couldn't test the first task Permanently block payment cards when the number of consecutive declined transactions exceeds 5.`,
+        ],
+      },
+    ],
+  },
+  {
+    title: "Project 21",
+    questions: [
+      {
+        question: "Which teammates executed the project?",
+        answer: "Team members: Olasunkanmi, and Radoslaw",
+      },
+      {
+        question: "What made you smile?",
+        answer: "",
+      },
+      {
+        question: "What did you find confusing? Did you encounter any issues?",
+        answer: [
+          `There should be a way to toggle a gateway active or inactive from the table. <br><img src="${debriefImage42}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
+          "There should be a way to set Volume limits during gateway creation.",
+          "We can't set a currency for volume limits, it's always in USD.",
+          "Payment gateway will go over the limit if it's being forced by a rule. This probably should result in an error instead.",
+          "When downtime schedule is deleted, the gateway is still down as transactions doesn't go to the gateway.",
+          "The weighted distribution didn't seem to work for us. All transactions were routed to the gateway with larger weight, instead of roughly 60/30.",
+          "We don't know if the limits work correctly. The downtime was sometimes applied, but it seemed like it either took much more than the specified limit, or there was a significant delay in triggering it. Also, even when removing the downtime, we couldn't get the originally prioritized gateway to work again.",
+          "It seems like changing the limit resets the counter",
+          "There's no way to check the current limit usage on the gateway",
         ],
       },
     ],
