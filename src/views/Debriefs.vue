@@ -72,6 +72,9 @@ import debriefImage41 from "@/assets/debriefs/21-4.png";
 import debriefImage42 from "@/assets/debriefs/22-1.png";
 import debriefImage43 from "@/assets/debriefs/23-1.png";
 import debriefImage44 from "@/assets/debriefs/23-2.png";
+import debriefImage45 from "@/assets/debriefs/24-1.png";
+import debriefImage46 from "@/assets/debriefs/24-2.png";
+import debriefImage47 from "@/assets/debriefs/24-3.png";
 import { ref } from "vue";
 const projectFeedback = ref([
   // {
@@ -429,6 +432,27 @@ const projectFeedback = ref([
         answer: [
           `There should be a way to ping a gateway to check if configuration is correct. <br><img src="${debriefImage44}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
           `Processing channel id is required on checkout.com end but when creating the gateway on Rebilly end it wasn't required.<br><img src="${debriefImage43}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
+        ],
+      },
+    ],
+  },
+  {
+    title: "Project 24",
+    questions: [
+      {
+        question: "Which teammates executed the project?",
+        answer: "Team members: Olasunkanmi, and Radoslaw",
+      },
+      {
+        question: "What made you smile?",
+        answer: "",
+      },
+      {
+        question: "What did you find confusing? Did you encounter any issues?",
+        answer: [
+          `If address is entered without selecting from google map, it doesn't say what is missing, it just fills it with the user's other billing address with no error throw. <br><img src="${debriefImage45}" alt='debrief image' style='width: 100%; margin-top: 10px;' /> <br><img src="${debriefImage46}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
+          `We were not sure if we should be doing this all in the recomm or checkout.com which took a good amount of time to figure out.`,
+          `The value list field should be specify as monospace font. For Apple product it uses the system font which doesn't work correctly for numbers. <br><img src="${debriefImage47}" alt='debrief image' style='width: 100%; margin-top: 10px;' /> `,
         ],
       },
     ],
