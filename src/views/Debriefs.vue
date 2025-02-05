@@ -75,6 +75,8 @@ import debriefImage44 from "@/assets/debriefs/23-2.png";
 import debriefImage45 from "@/assets/debriefs/24-1.png";
 import debriefImage46 from "@/assets/debriefs/24-2.png";
 import debriefImage47 from "@/assets/debriefs/24-3.png";
+import debriefImage48 from "@/assets/debriefs/25-1.png";
+import debriefImage49 from "@/assets/debriefs/25-2.png";
 import { ref } from "vue";
 const projectFeedback = ref([
   // {
@@ -453,6 +455,27 @@ const projectFeedback = ref([
           `If address is entered without selecting from google map, it doesn't say what is missing, it just fills it with the user's other billing address with no error throw. <br><img src="${debriefImage45}" alt='debrief image' style='width: 100%; margin-top: 10px;' /> <br><img src="${debriefImage46}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
           `We were not sure if we should be doing this all in the recomm or checkout.com which took a good amount of time to figure out.`,
           `The value list field should be specify as monospace font. For Apple product it uses the system font which doesn't work correctly for numbers. <br><img src="${debriefImage47}" alt='debrief image' style='width: 100%; margin-top: 10px;' /> `,
+        ],
+      },
+    ],
+  },
+  {
+    title: "Project 24",
+    questions: [
+      {
+        question: "Which teammates executed the project?",
+        answer: "Team members: Olasunkanmi, and Radoslaw",
+      },
+      {
+        question: "What made you smile?",
+        answer: "Took less than 1:15mins as against 3 hours allocated.",
+      },
+      {
+        question: "What did you find confusing? Did you encounter any issues?",
+        answer: [
+          `The UI is misleading, we weren't sure if we had entered signature key before now, when we tested, we realised nothing was entered. <br><img src="${debriefImage48}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
+          `We didn't know about IPN until we stumbled on it, we thought we could just send a POST create dispute endpoint.`,
+          `There are two transactions ID and they're the same. <br><img src="${debriefImage49}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
         ],
       },
     ],
