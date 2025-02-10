@@ -460,7 +460,7 @@ const projectFeedback = ref([
     ],
   },
   {
-    title: "Project 24",
+    title: "Project 25",
     questions: [
       {
         question: "Which teammates executed the project?",
