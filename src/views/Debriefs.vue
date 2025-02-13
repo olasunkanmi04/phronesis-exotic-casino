@@ -59,24 +59,29 @@
 // import debriefImage29 from "@/assets/debriefs/18-1.png";
 // import debriefImage30 from "@/assets/debriefs/19-1.png";
 // import debriefImage31 from "@/assets/debriefs/19-2.png";
-import debriefImage32 from "@/assets/debriefs/20-1.png";
-import debriefImage33 from "@/assets/debriefs/20-2.png";
-import debriefImage34 from "@/assets/debriefs/20-3.png";
-import debriefImage35 from "@/assets/debriefs/20-4.png";
-import debriefImage36 from "@/assets/debriefs/20-5.png";
-import debriefImage37 from "@/assets/debriefs/20-6.png";
-import debriefImage38 from "@/assets/debriefs/21-1.png";
-import debriefImage39 from "@/assets/debriefs/21-2.png";
-import debriefImage40 from "@/assets/debriefs/21-3.png";
-import debriefImage41 from "@/assets/debriefs/21-4.png";
-import debriefImage42 from "@/assets/debriefs/22-1.png";
-import debriefImage43 from "@/assets/debriefs/23-1.png";
-import debriefImage44 from "@/assets/debriefs/23-2.png";
+// import debriefImage32 from "@/assets/debriefs/20-1.png";
+// import debriefImage33 from "@/assets/debriefs/20-2.png";
+// import debriefImage34 from "@/assets/debriefs/20-3.png";
+// import debriefImage35 from "@/assets/debriefs/20-4.png";
+// import debriefImage36 from "@/assets/debriefs/20-5.png";
+// import debriefImage37 from "@/assets/debriefs/20-6.png";
+// import debriefImage38 from "@/assets/debriefs/21-1.png";
+// import debriefImage39 from "@/assets/debriefs/21-2.png";
+// import debriefImage40 from "@/assets/debriefs/21-3.png";
+// import debriefImage41 from "@/assets/debriefs/21-4.png";
+// import debriefImage42 from "@/assets/debriefs/22-1.png";
+// import debriefImage43 from "@/assets/debriefs/23-1.png";
+// import debriefImage44 from "@/assets/debriefs/23-2.png";
 import debriefImage45 from "@/assets/debriefs/24-1.png";
 import debriefImage46 from "@/assets/debriefs/24-2.png";
 import debriefImage47 from "@/assets/debriefs/24-3.png";
 import debriefImage48 from "@/assets/debriefs/25-1.png";
 import debriefImage49 from "@/assets/debriefs/25-2.png";
+import debriefImage50 from "@/assets/debriefs/26-1.png";
+import debriefImage51 from "@/assets/debriefs/26-2.png";
+import debriefImage52 from "@/assets/debriefs/26-3.png";
+import debriefImage53 from "@/assets/debriefs/26-4.png";
+import debriefImage54 from "@/assets/debriefs/26-5.mov";
 import { ref } from "vue";
 const projectFeedback = ref([
   // {
@@ -338,106 +343,106 @@ const projectFeedback = ref([
   //       },
   //     ],
   //   },
-  {
-    title: "Project 20",
-    questions: [
-      {
-        question: "Which teammates executed the project?",
-        answer: "Team members: Olasunkanmi, and Bartlomiej",
-      },
-      {
-        question: "What made you smile?",
-        answer: "",
-      },
-      {
-        question: "What did you find confusing? Did you encounter any issues?",
-        answer: [
-          `We kept getting this error intermittently and saved payment methods duplicate multiple times, but when we refresh it returns to normal. It happens when we switch page and back. <br><img src="${debriefImage32}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
-          `There's disparity in the examples in the doc. One example says the mount options are, <em>cashierToken</em> and <em>element</em> while another says it's <em>token</em> and <em>mountElement</em>. <br><img src="${debriefImage33}" alt='debrief image' style='width: 100%; margin-top: 10px;' /><br><img src="${debriefImage34}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
-          "There is no variable for --r-payment-method-item-border-color-hover and it was in the documentation.",
-          `Google pay button has a scroll bar. <br><img src="${debriefImage35}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
-          `The --r-surface variable doesn't exist in the documentation, instead we have --r-alert-background. Both works because --r-alert-background is referencing --r-surface but for consistence, we shouldn't show --r-surface in the docs. <br><img src="${debriefImage36}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
-          `Google map API not working and we couldn't enter the address manually. <br><img src="${debriefImage37}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
-        ],
-      },
-    ],
-  },
-  {
-    title: "Project 21",
-    questions: [
-      {
-        question: "Which teammates executed the project?",
-        answer: "Team members: Olasunkanmi, and Radoslaw",
-      },
-      {
-        question: "What made you smile?",
-        answer: "",
-      },
-      {
-        question: "What did you find confusing? Did you encounter any issues?",
-        answer: [
-          `No idea what to look at in the documentation. Was stock on Risk score documentation but couldn't get it to work work.`,
-          `There should be a way to know here that 0 means permanently block. <br><img src="${debriefImage38}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
-          `We were not sure how to enter number of consecutive decline transactions.`,
-          `We couldn't save automated blocklist when there is a custom blocklist that isn't use. We should be able to delete the custom blocklist and save the automated blocklist.`,
-          `When there is an error, there is no way to know if a user is at the bottom of the page.`,
-          `We think there should be a separate UI for each blocklist instead of having them all in one page.`,
-          `We think for block transactions with mismatched bank country and billing country, the first transaction should be blocked instead of letting it go through and then block subsequent transactions with the card. Maybe there should a switch if we want to block the first or just subsequent transactions.`,
-          `UI alignment looks off. <br><img src="${debriefImage39}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
-          `We get this error when we hit browser back button and tried the transaction again. <br><img src="${debriefImage40}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
-          `After 6 declined transactions, we still have 0 declined payment intrument velocity. <br><img src="${debriefImage41}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
-          `We couldn't test the first task Permanently block payment cards when the number of consecutive declined transactions exceeds 5.`,
-        ],
-      },
-    ],
-  },
-  {
-    title: "Project 22",
-    questions: [
-      {
-        question: "Which teammates executed the project?",
-        answer: "Team members: Olasunkanmi, and Radoslaw",
-      },
-      {
-        question: "What made you smile?",
-        answer: "",
-      },
-      {
-        question: "What did you find confusing? Did you encounter any issues?",
-        answer: [
-          `There should be a way to toggle a gateway active or inactive from the table. <br><img src="${debriefImage42}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
-          "There should be a way to set Volume limits during gateway creation.",
-          "We can't set a currency for volume limits, it's always in USD.",
-          "Payment gateway will go over the limit if it's being forced by a rule. This probably should result in an error instead.",
-          "When downtime schedule is deleted, the gateway is still down as transactions doesn't go to the gateway.",
-          "The weighted distribution didn't seem to work for us. All transactions were routed to the gateway with larger weight, instead of roughly 60/30.",
-          "We don't know if the limits work correctly. The downtime was sometimes applied, but it seemed like it either took much more than the specified limit, or there was a significant delay in triggering it. Also, even when removing the downtime, we couldn't get the originally prioritized gateway to work again.",
-          "It seems like changing the limit resets the counter",
-          "There's no way to check the current limit usage on the gateway",
-        ],
-      },
-    ],
-  },
-  {
-    title: "Project 23",
-    questions: [
-      {
-        question: "Which teammates executed the project?",
-        answer: "Team members: Olasunkanmi, and Radoslaw",
-      },
-      {
-        question: "What made you smile?",
-        answer: "",
-      },
-      {
-        question: "What did you find confusing? Did you encounter any issues?",
-        answer: [
-          `There should be a way to ping a gateway to check if configuration is correct. <br><img src="${debriefImage44}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
-          `Processing channel id is required on checkout.com end but when creating the gateway on Rebilly end it wasn't required.<br><img src="${debriefImage43}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
-        ],
-      },
-    ],
-  },
+  // {
+  //   title: "Project 20",
+  //   questions: [
+  //     {
+  //       question: "Which teammates executed the project?",
+  //       answer: "Team members: Olasunkanmi, and Bartlomiej",
+  //     },
+  //     {
+  //       question: "What made you smile?",
+  //       answer: "",
+  //     },
+  //     {
+  //       question: "What did you find confusing? Did you encounter any issues?",
+  //       answer: [
+  //         `We kept getting this error intermittently and saved payment methods duplicate multiple times, but when we refresh it returns to normal. It happens when we switch page and back. <br><img src="${debriefImage32}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
+  //         `There's disparity in the examples in the doc. One example says the mount options are, <em>cashierToken</em> and <em>element</em> while another says it's <em>token</em> and <em>mountElement</em>. <br><img src="${debriefImage33}" alt='debrief image' style='width: 100%; margin-top: 10px;' /><br><img src="${debriefImage34}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
+  //         "There is no variable for --r-payment-method-item-border-color-hover and it was in the documentation.",
+  //         `Google pay button has a scroll bar. <br><img src="${debriefImage35}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
+  //         `The --r-surface variable doesn't exist in the documentation, instead we have --r-alert-background. Both works because --r-alert-background is referencing --r-surface but for consistence, we shouldn't show --r-surface in the docs. <br><img src="${debriefImage36}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
+  //         `Google map API not working and we couldn't enter the address manually. <br><img src="${debriefImage37}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
+  //       ],
+  //     },
+  //   ],
+  // },
+  // {
+  //   title: "Project 21",
+  //   questions: [
+  //     {
+  //       question: "Which teammates executed the project?",
+  //       answer: "Team members: Olasunkanmi, and Radoslaw",
+  //     },
+  //     {
+  //       question: "What made you smile?",
+  //       answer: "",
+  //     },
+  //     {
+  //       question: "What did you find confusing? Did you encounter any issues?",
+  //       answer: [
+  //         `No idea what to look at in the documentation. Was stock on Risk score documentation but couldn't get it to work work.`,
+  //         `There should be a way to know here that 0 means permanently block. <br><img src="${debriefImage38}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
+  //         `We were not sure how to enter number of consecutive decline transactions.`,
+  //         `We couldn't save automated blocklist when there is a custom blocklist that isn't use. We should be able to delete the custom blocklist and save the automated blocklist.`,
+  //         `When there is an error, there is no way to know if a user is at the bottom of the page.`,
+  //         `We think there should be a separate UI for each blocklist instead of having them all in one page.`,
+  //         `We think for block transactions with mismatched bank country and billing country, the first transaction should be blocked instead of letting it go through and then block subsequent transactions with the card. Maybe there should a switch if we want to block the first or just subsequent transactions.`,
+  //         `UI alignment looks off. <br><img src="${debriefImage39}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
+  //         `We get this error when we hit browser back button and tried the transaction again. <br><img src="${debriefImage40}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
+  //         `After 6 declined transactions, we still have 0 declined payment intrument velocity. <br><img src="${debriefImage41}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
+  //         `We couldn't test the first task Permanently block payment cards when the number of consecutive declined transactions exceeds 5.`,
+  //       ],
+  //     },
+  //   ],
+  // },
+  // {
+  //   title: "Project 22",
+  //   questions: [
+  //     {
+  //       question: "Which teammates executed the project?",
+  //       answer: "Team members: Olasunkanmi, and Radoslaw",
+  //     },
+  //     {
+  //       question: "What made you smile?",
+  //       answer: "",
+  //     },
+  //     {
+  //       question: "What did you find confusing? Did you encounter any issues?",
+  //       answer: [
+  //         `There should be a way to toggle a gateway active or inactive from the table. <br><img src="${debriefImage42}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
+  //         "There should be a way to set Volume limits during gateway creation.",
+  //         "We can't set a currency for volume limits, it's always in USD.",
+  //         "Payment gateway will go over the limit if it's being forced by a rule. This probably should result in an error instead.",
+  //         "When downtime schedule is deleted, the gateway is still down as transactions doesn't go to the gateway.",
+  //         "The weighted distribution didn't seem to work for us. All transactions were routed to the gateway with larger weight, instead of roughly 60/30.",
+  //         "We don't know if the limits work correctly. The downtime was sometimes applied, but it seemed like it either took much more than the specified limit, or there was a significant delay in triggering it. Also, even when removing the downtime, we couldn't get the originally prioritized gateway to work again.",
+  //         "It seems like changing the limit resets the counter",
+  //         "There's no way to check the current limit usage on the gateway",
+  //       ],
+  //     },
+  //   ],
+  // },
+  // {
+  //   title: "Project 23",
+  //   questions: [
+  //     {
+  //       question: "Which teammates executed the project?",
+  //       answer: "Team members: Olasunkanmi, and Radoslaw",
+  //     },
+  //     {
+  //       question: "What made you smile?",
+  //       answer: "",
+  //     },
+  //     {
+  //       question: "What did you find confusing? Did you encounter any issues?",
+  //       answer: [
+  //         `There should be a way to ping a gateway to check if configuration is correct. <br><img src="${debriefImage44}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
+  //         `Processing channel id is required on checkout.com end but when creating the gateway on Rebilly end it wasn't required.<br><img src="${debriefImage43}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
+  //       ],
+  //     },
+  //   ],
+  // },
   {
     title: "Project 24",
     questions: [
@@ -476,6 +481,33 @@ const projectFeedback = ref([
           `The UI is misleading, we weren't sure if we had entered signature key before now, when we tested, we realised nothing was entered. <br><img src="${debriefImage48}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
           `We didn't know about IPN until we stumbled on it, we thought we could just send a POST create dispute endpoint.`,
           `There are two transactions ID and they're the same. <br><img src="${debriefImage49}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
+        ],
+      },
+    ],
+  },
+  {
+    title: "Project 26",
+    questions: [
+      {
+        question: "Which teammates executed the project?",
+        answer: "Team members: Olasunkanmi, and Chris",
+      },
+      {
+        question: "What made you smile?",
+        answer: "Babies.",
+      },
+      {
+        question: "What did you find confusing? Did you encounter any issues?",
+        answer: [
+          `UI capitalization inconsistent when adding fields. <br><img src="${debriefImage50}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
+          `UI capitalization inconsistent in test form. <br><img src="${debriefImage51}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
+          `Test form does not work. Error message is displayed when submitting form. 'Something went wrong. Please try again later.' <br><img src="${debriefImage52}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
+          "Would be nice to add headers to the form fields in Googlesheets to make it easier to read. maybe take headers from fields. If this is not possible, we should add information to the UI to tell the user to add the column headers to the GoogleSheet before integrating.",
+          `No dispute UI. Need to go to related transactions to see disputes. ID/link should be dispute ID and pointing to the dispute.  <br><img src="${debriefImage53}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
+          `Update 'Data tables' > 'disputes' table to sort by 'dispute time' by default, not by the transaction 'creation time' We were confused by the current order.`,
+          `'dispute time' sort and column disappears after adding it to the table and sorting by it. <br> <video width="100%" controls><source src="${debriefImage54}" type="video/mp4">Your browser does not support HTML video.</video>`,
+          "Unexpected behavior when a dispute is updated. We were not redirect back to the transaction page.",
+          "Unexpected behavior when adding fields. The newly added field move to the top, which may seem like it was deleted.",
         ],
       },
     ],
