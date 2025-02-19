@@ -522,8 +522,9 @@ const projectFeedback = ref([
         answer: "Team members: Olasunkanmi, and Radek",
       },
       {
-        question: "What made you smile?",
-        answer: "",
+        question: "What did you find confusing?",
+        answer:
+          'We tried setting up the "subscription trial converted" event to test the "is trial converted" condition - no email was sent after we paid the invoice',
       },
       {
         question: "What did you find confusing? Did you encounter any issues?",
