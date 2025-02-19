@@ -82,6 +82,8 @@ import debriefImage51 from "@/assets/debriefs/26-2.png";
 import debriefImage52 from "@/assets/debriefs/26-3.png";
 import debriefImage53 from "@/assets/debriefs/26-4.png";
 import debriefImage54 from "@/assets/debriefs/26-5.mov";
+import debriefImage55 from "@/assets/debriefs/27-1.png";
+import debriefImage56 from "@/assets/debriefs/27-2.png";
 import { ref } from "vue";
 const projectFeedback = ref([
   // {
@@ -508,6 +510,26 @@ const projectFeedback = ref([
           `'dispute time' sort and column disappears after adding it to the table and sorting by it. <br> <video width="100%" controls><source src="${debriefImage54}" type="video/mp4">Your browser does not support HTML video.</video>`,
           "Unexpected behavior when a dispute is updated. We were not redirect back to the transaction page.",
           "Unexpected behavior when adding fields. The newly added field move to the top, which may seem like it was deleted.",
+        ],
+      },
+    ],
+  },
+  {
+    title: "Project 27",
+    questions: [
+      {
+        question: "Which teammates executed the project?",
+        answer: "Team members: Olasunkanmi, and Radek",
+      },
+      {
+        question: "What made you smile?",
+        answer: "",
+      },
+      {
+        question: "What did you find confusing? Did you encounter any issues?",
+        answer: [
+          `Some pages on the docs doesn't show the search bar. <br> https://www.rebilly.com/docs/tutorials/product-training <br>https://www.rebilly.com/docs/settings/products-and-pricing <br>https://www.rebilly.com/docs/dev-docs/products-and-plans <br><img src="${debriefImage55}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
+          `Two emails were sent yet the sent count still reads 0 for subcription trial end reminder. <br><img src="${debriefImage56}" alt='debrief image' style='width: 100%; margin-top: 10px;' />`,
         ],
       },
     ],
