@@ -41,7 +41,7 @@ onMounted(() => {
 const mountDepositForm = async () => {
   if (depositRequest.value.cashierToken && window.RebillyCashier) {
     await RebillyCashier.renderDeposit({
-      token: depositRequest.value.cashierToken,
+      cashierToken: depositRequest.value.cashierToken,
       mountElement: document.getElementById("deposit"),
     });
   } else {
